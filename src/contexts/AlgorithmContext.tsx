@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import * as algorithms from '../algorithms/index.ts' 
+import * as algorithms from '../algorithms/index';
 import { SortingFunction } from '../utils/types';
 
 type AlgorithmName = keyof typeof algorithms;
