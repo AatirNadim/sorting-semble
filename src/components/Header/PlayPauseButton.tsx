@@ -10,6 +10,8 @@ const PlayPauseButton: React.FC = () => {
 
   return (
     <button
+    className='bg-four text-one px-4 py-2 rounded-md font-semibold cursor-pointer hover:bg-four-hover transition'
+
       onClick={() => {
         isPlaying ? pause() : play();
       }}

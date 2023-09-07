@@ -11,7 +11,9 @@ const CustomArrayButton: React.FC = () => {
 
   return (
     <>
-      <button onClick={toggle}>Custom Array</button>
+      <button 
+        className='bg-four text-one px-4 py-2 rounded-md font-semibold cursor-pointer hover:bg-four-hover transition'
+      onClick={toggle}>Custom Array</button>
       <ArrayModal visible={isShowing} hide={toggle} />
     </>
   );

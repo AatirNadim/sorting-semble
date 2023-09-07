@@ -10,8 +10,9 @@ import CustomArrayButton from './CustomArrayBtn';
 
 const Header: React.FC = () => {
   return (
-    <nav className='w-screen flex flex-col items-start justify-center h-[10%]' >
-      <div className='w-full flex flex-row justify-start items-center gap-12 overflow-auto' >
+    <nav className='w-screen flex flex-row items-center justify-start h-[10%] bg-three px-4 py-2 gap-4 overflow-auto ' >
+      <div className='font-bold text-4xl text-one' >Sorting Semble</div>
+      <div className='flex-grow flex flex-row justify-end items-center gap-20 overflow-auto h-full ' >
         <PlayPauseButton />
         <RefreshArrayButton />
         <CustomArrayButton />

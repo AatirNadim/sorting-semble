@@ -6,7 +6,7 @@ import Visualizer from './Visualizer';
 
 const Content: React.FC = () => {
   return (
-    <div className='w-[80%] h-full overflow-auto' >
+    <div className='w-[75%] h-full overflow-auto' >
       <Visualizer />
     </div>
   );

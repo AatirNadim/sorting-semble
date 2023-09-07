@@ -18,7 +18,7 @@ const Sider: React.FC = () => {
   const siderWidth = Math.min(smallWidth, bigWidth);
 
   return (
-    <div className='w-[20%] flex flex-col justify-start gap-4 pt-4 overflow-auto h-full' >
+    <div className='w-[25%] flex flex-col justify-start gap-4 pt-4 overflow-auto h-full bg-three px-4' >
       <AlgorithmSelector />
       <AlgorithmEditor />
     </div>

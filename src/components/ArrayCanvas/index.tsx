@@ -28,7 +28,7 @@ const ArrayCanvas: React.FC<Props> = ({ array, points }) => {
   }, [array])
 
   return (
-    <div className="visualizer-canvas flex flex-row h-full overflow-auto w-full gap-2">
+    <div className="visualizer-canvas flex flex-row h-full overflow-auto w-full gap-2 justify-around bg-one px-2  ">
       {array.map((nr, index) => (
         <Bar key={nr} height={heightMapper(nr) + '%'} color={points[index]} />
       ))}

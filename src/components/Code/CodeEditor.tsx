@@ -14,11 +14,11 @@ const CodeEditor: React.FC<Props> = ({ value, onChange }) => {
   return (
     <AceEditor
       mode="javascript"
-      theme="monokai"
+      theme="clouds_midnight"
       value={value}
       onChange={onChange}
       width="100%"
-      height="87vh"
+      height="70vh"
       showPrintMargin
       showGutter
       highlightActiveLine

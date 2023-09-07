@@ -14,12 +14,12 @@ const AlgorithmSelector: React.FC = () => {
 
   return (
     <select
-      className="algorithm-selector w-full h-10 outline-none border-2 border-gray-400 rounded-lg"
+      className="algorithm-selector w-full h-10 outline-none border-2 border-gray-400 rounded-lg p-2 font-semibold cursor-pointer text-four bg-one"
       value={selectedAlgorithm}
       onChange={(e) => selectAlgorithm(e.target.value as AlgorithmName)}
     >
       {algorithmNames.map((name) => (
-        <option value={name} key={name}>
+        <option className='font-semibold p-2 m-2'  value={name} key={name}>
           {camelCaseToCaseText(name)}
         </option>
       ))}
