@@ -11,6 +11,7 @@ export default {
         'two' : '#FF6969',
         'three' : '#BB2525',
         'four' : '#141E46',
+        'four-hover' : '#1e2e6c',
       }
     },
   },

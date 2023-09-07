@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { SortingPoints } from '../../utils/types';
 
@@ -23,8 +23,12 @@ const ArrayCanvas: React.FC<Props> = ({ array, points }) => {
     [minBarHeight, maxBarHeight]
   );
 
+  useEffect(() => {
+    console.log('array changed --> \n\n', array)
+  }, [array])
+
   return (
-    <div className="visualizer-canvas">
+    <div className="visualizer-canvas flex flex-row h-full overflow-auto w-full gap-2">
       {array.map((nr, index) => (
         <Bar key={nr} height={heightMapper(nr) + '%'} color={points[index]} />
       ))}

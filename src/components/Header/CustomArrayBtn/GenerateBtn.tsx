@@ -11,7 +11,9 @@ const GenerateButton: React.FC = () => {
   return (
     <button
       // type="primary"
-      className='ml-auto'
+      className='ml-auto bg-four text-white px-4 py-2 rounded-md font-semibold cursor-pointer
+        hover:bg-four-hover transition
+      '
       onClick={replaceArray}
       disabled={!validCustomArrayString}
     >

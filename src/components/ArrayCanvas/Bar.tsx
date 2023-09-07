@@ -6,7 +6,7 @@ type Props = {
 };
 
 const Bar: React.FC<Props> = ({ height, color }) => {
-  return <div className="bar" style={{ height, backgroundColor: color }} />;
+  return <div className="bar w-[10px] bg-two " style={{ height, backgroundColor: color }} />;
 };
 
 export default React.memo(Bar);

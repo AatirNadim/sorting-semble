@@ -32,7 +32,10 @@ const ArrayProvider: React.FC = ({ children }) => {
     /^(\d+\s*,\s*)+\d+\s*$/
   );
 
-  const generateArray = (n: number) => setArray(generateArrayOfLength(n));
+  const generateArray = (n: number) => {  
+    console.log('generateArray called')
+    setArray(generateArrayOfLength(n));
+  }
 
   useEffect(() => {
     generateArray(arrayLength);
@@ -43,6 +46,7 @@ const ArrayProvider: React.FC = ({ children }) => {
   const replaceArray = () => {
     // Replaces the array with a custom one
     const arr = customArrayString.split(',').map((el) => parseInt(el));
+    console.log('array generated --> \n\n', arr);
     setArray(arr);
     setArrayLength(arr.length);
   };
